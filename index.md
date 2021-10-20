@@ -1,5 +1,7 @@
 <p align="center">
   <a href="https://gmeishvili.github.io" style="font-size: 21px; text-decoration: none">Givi Meishvili</a> 
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="https://www.linkedin.com/in/the-real-attila-szabo/?originalSubdomain=ch" style="font-size: 21px; text-decoration: none">Attila Szabo</a> 
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
   <a href="https://sjenni.github.io" style="font-size: 21px; text-decoration: none">Simon Jenni</a> 
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
@@ -31,7 +33,7 @@ ___
 # Results
 
 <p align="center">
-    <img src="assets/qualitative_sb.png" width="700">
+    <img src="assets/qualitative_sb.png" width="800">
 </p>
 
 ***Example sharp video reconstructions from our model.*** *We show reconstructed frame sequences without viewpoint change (odd columns) and with random viewpoint changes (even columns). The first row shows the blurry input image followed by landmarks computed on the first and last frame in the reconstructed sequence. The first three examples are computed on VIDTIMIT and the last two on our test set.*
