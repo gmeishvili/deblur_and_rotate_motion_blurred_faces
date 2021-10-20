@@ -24,6 +24,7 @@ ___
 # Abstract
 
 We propose a solution to the novel task of rendering sharp videos from new view-points from a single motion-blurred image of a face. Our method handles the complexityof face blur by implicitly learning the geometry and motion of faces through the jointtraining on three large datasets: FFHQ and 300VW, which are publicly available, and anew multi-view face dataset that we built, which will be made available upon publication.The first two datasets provide a large variety of faces and allow our model to generalizebetter. The third dataset instead allows us to introduce multi-view constraints, which arecrucial to synthesizing sharp videos from a new camera view.  Our dataset consists ofhigh frame rate synchronized videos from multiple views of several subjects displayinga wide range of facial expressions.  We use the high frame rate videos to simulate real-istic motion blur through averaging.  Thanks to this dataset, we train a neural networkto reconstruct a 3D video representation from a single image and the corresponding facegaze.  We then provide a camera viewpoint relative to the estimated gaze and the blurryimage as input to an encoder-decoder network to generate a video of sharp frames with anovel camera viewpoint. We demonstrate our approach on test subjects of our multi-viewdataset and VIDTIMIT.
+
 ___
 
 
