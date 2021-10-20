@@ -10,7 +10,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/1909.12780" style="font-size: 21px; text-decoration: none">[Paper]</a>
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-  <a href="https://github.com/gmeishvili/ear_for_face_super_resolution" style="font-size: 21px; text-decoration: none">[GitHub]</a> 
+  <a href="https://github.com/gmeishvili/deblur_and_rotate_motion_blurred_faces" style="font-size: 21px; text-decoration: none">[GitHub]</a> 
 </p>
 
   
@@ -23,8 +23,7 @@ ___
 
 # Abstract
 
-We propose a novel method to use both audio and a low-resolution image to perform extreme face super-resolution (a 16× increase of the input size). When the resolution of the input image is very low (e.g., 8 × 8 pixels), the loss of information is so dire that important details of the original identity have been lost and audio can aid the recovery of a plausible high-resolution image. In fact, audio carries information about facial attributes, such as gender and age. Moreover, if an audio track belongs to an identity in a known training set, such audio might even help to restore the original identity. Towards this goal, we propose a model and a training procedure to extract information about the face of a person from her audio track and to combine it with the information extracted from her low-resolution image, which relates more to pose and colors of the face. We demonstrate that the combination of these two inputs yields high-resolution images that better capture the correct attributes of the face. In particular, we show experimentally that audio can assist in recovering attributes such as the gender, the age and the identity, and thus improve the correctness of the image reconstruction process. Our procedure does not make use of human annotation and thus can be easily trained with existing video datasets. Moreover, we show that our model builds a factorized representation of images and audio as it allows one to mix low-resolution images and audio from different videos and to generate realistic faces with semantically meaningful combinations.
-
+We propose a solution to the novel task of rendering sharp videos from new view-points from a single motion-blurred image of a face. Our method handles the complexityof face blur by implicitly learning the geometry and motion of faces through the jointtraining on three large datasets: FFHQ and 300VW, which are publicly available, and anew multi-view face dataset that we built, which will be made available upon publication.The first two datasets provide a large variety of faces and allow our model to generalizebetter. The third dataset instead allows us to introduce multi-view constraints, which arecrucial to synthesizing sharp videos from a new camera view.  Our dataset consists ofhigh frame rate synchronized videos from multiple views of several subjects displayinga wide range of facial expressions.  We use the high frame rate videos to simulate real-istic motion blur through averaging.  Thanks to this dataset, we train a neural networkto reconstruct a 3D video representation from a single image and the corresponding facegaze.  We then provide a camera viewpoint relative to the estimated gaze and the blurryimage as input to an encoder-decoder network to generate a video of sharp frames with anovel camera viewpoint. We demonstrate our approach on test subjects of our multi-viewdataset and VIDTIMIT.
 ___
 
 
