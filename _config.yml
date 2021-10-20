@@ -1,5 +1,5 @@
 theme: minima
-title: Learning to Have an Ear for Face Super-Resolution
-author: Givi Meishvili, Simon Jenni, Paolo Favaro
+title: Learning to Deblur and RotateMotion-Blurred Faces
+author: Givi Meishvili, Attila Szabo, Simon Jenni, Paolo Favaro
 email: givi.meishvili@inf.unibe.ch
-description: This is the project page for our CVPR2020 oral paper titled "Learning to Have an Ear for Face Super-Resolution"
+description: This is the project page for our BMVC2021 paper titled "Learning to Deblur and RotateMotion-Blurred Faces"
