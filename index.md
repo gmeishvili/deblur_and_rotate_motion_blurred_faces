@@ -31,9 +31,7 @@ ___
 # Results
 
 <p align="center">
-    <img src="assets/comparison.png" width="600">
+    <img src="assets/qualitative_sb.png" width="600">
 </p>
 
-***Comparison to other super-resolution methods on our test set.*** *The first column shows the 8 × 8 pixels inputs; the second column shows the output of LapSRN; the third column shows the output of W-SRNet. Our model is shown in the fourth column. The ground-truth high-resolution image is shown in the last column.*
-
-
+***Example sharp video reconstructions from our model.*** *We show reconstructed frame sequences without viewpoint change (odd columns) and with random viewpoint changes (even columns). The first row shows the blurry input image followed by landmarks computed on the first and last frame in the reconstructed sequence. The first three examples are computed on VIDTIMIT and the last two on our test set.*
