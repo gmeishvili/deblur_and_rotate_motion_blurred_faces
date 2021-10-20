@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+<p align="center">
+  <a href="https://gmeishvili.github.io" style="font-size: 21px; text-decoration: none">Givi Meishvili</a> 
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+  <a href="https://sjenni.github.io" style="font-size: 21px; text-decoration: none">Simon Jenni</a> 
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+  <a href="http://www.cvg.unibe.ch/people/favaro" style="font-size: 21px; text-decoration: none">Paolo Favaro</a>
+</p>
 
-You can use the [editor on GitHub](https://github.com/gmeishvili/deblur_and_rotate_motion_blurred_faces/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<p align="center">
+  <a href="https://arxiv.org/abs/1909.12780" style="font-size: 21px; text-decoration: none">[Paper]</a>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+  <a href="https://github.com/gmeishvili/ear_for_face_super_resolution" style="font-size: 21px; text-decoration: none">[GitHub]</a> 
+</p>
 
-### Markdown
+  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+![Model](assets/figure_model.png)
+***Simplified training and operating scheme of the proposed model.*** *The model can be used (a) with matching inputs or (b) by mixing low-resolution images with audios from other videos. The low-resolution image (8 × 8 pixels) is fed to an encoder E<sub>l</sub> to obtain an intermediate latent representation. A residual is computed by fusing in the network F the encoded audio track (through the encoder E<sub>a</sub>) with the encoded low-resolution image. The residual is used to update the latent representation of the low-resolution image and then produce the high-resolution image through the generator G.*
 
-# Header 1
-## Header 2
-### Header 3
+___
 
-- Bulleted
-- List
+# Abstract
 
-1. Numbered
-2. List
+We propose a novel method to use both audio and a low-resolution image to perform extreme face super-resolution (a 16× increase of the input size). When the resolution of the input image is very low (e.g., 8 × 8 pixels), the loss of information is so dire that important details of the original identity have been lost and audio can aid the recovery of a plausible high-resolution image. In fact, audio carries information about facial attributes, such as gender and age. Moreover, if an audio track belongs to an identity in a known training set, such audio might even help to restore the original identity. Towards this goal, we propose a model and a training procedure to extract information about the face of a person from her audio track and to combine it with the information extracted from her low-resolution image, which relates more to pose and colors of the face. We demonstrate that the combination of these two inputs yields high-resolution images that better capture the correct attributes of the face. In particular, we show experimentally that audio can assist in recovering attributes such as the gender, the age and the identity, and thus improve the correctness of the image reconstruction process. Our procedure does not make use of human annotation and thus can be easily trained with existing video datasets. Moreover, we show that our model builds a factorized representation of images and audio as it allows one to mix low-resolution images and audio from different videos and to generate realistic faces with semantically meaningful combinations.
 
-**Bold** and _Italic_ and `Code` text
+___
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# Results
 
-### Jekyll Themes
+<p align="center">
+    <img src="assets/comparison.png" width="600">
+</p>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gmeishvili/deblur_and_rotate_motion_blurred_faces/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+***Comparison to other super-resolution methods on our test set.*** *The first column shows the 8 × 8 pixels inputs; the second column shows the output of LapSRN; the third column shows the output of W-SRNet. Our model is shown in the fourth column. The ground-truth high-resolution image is shown in the last column.*
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
